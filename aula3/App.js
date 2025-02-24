@@ -4,18 +4,24 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={{width: 100, height: 100,
-         backgroundColor: '#f00',
-         alignItems: 'center',
-         justifyContent: 'center'}}>
-        <Text style={{alignItems:'center', justifyContent: 'center'}}>Bom dia!</Text>
+      <View style={{
+        alignSelf: 'stretch',
+        flex: 5,
+        backgroundColor: '#f00',
+        alignItems: 'center',
+        justifyContent: 'center'
+        }}>
+        <Text>Bom dia!</Text>
       </View>
 
-      <View style={{width: 200, height: 200, 
+      <View style={{
+        flex: 5,
+        alignSelf: 'stretch', 
         backgroundColor: 'skyblue',
         alignItems: 'center',
-        justifyContent: 'center'}}>
-        <Text style={{alignItems:'center', justifyContent: 'center'}}>Turma Fiap!</Text>
+        justifyContent: 'center'
+        }}>
+        <Text>Turma Fiap!</Text>
       </View>
     </View>
   );
